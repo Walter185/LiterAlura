@@ -43,6 +43,20 @@ Utilizaremos [Spring Initializr](https://start.spring.io/) para generar la estru
 
 ---
 
+## 🌐 API Gutendex
+
+La API **Gutendex** es un catálogo de información de más de 70.000 libros presentes en **Project Gutenberg**, una biblioteca en línea y gratuita.
+
+En esta etapa del desafío, es fundamental comprender cómo funciona esta API, revisar su documentación y aprender a realizar consultas.  
+⚠️ *No es necesario obtener una clave de acceso*. Basta con hacer solicitudes conforme lo indica la documentación.
+
+- 📘 **Enlace de la API:** [https://gutendex.com/](https://gutendex.com/)
+- 🛠️ **Repositorio oficial (código fuente):** [https://github.com/garethbjohnson/gutendex](https://github.com/garethbjohnson/gutendex)
+
+> *Dejamos el código oficial por si tienes curiosidad sobre cómo está construida la API.*
+
+---
+
 ### 📁 Estructura inicial del proyecto
 
 Una vez generado el proyecto con Spring Initializr y descomprimido el ZIP, podrás abrirlo en tu IDE preferido, como IntelliJ IDEA, y comenzar el desarrollo del backend del sistema LiterAlura.
