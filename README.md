@@ -18,8 +18,8 @@ Asegúrate de contar con los siguientes programas y versiones instaladas:
 |----------------------|----------------|---------------------------------------------------|
 | Java JDK             | 21             | [Descargar JDK](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html) |
 | Maven                | 4 o superior   | [Descargar Maven](https://maven.apache.org/download.cgi) |
-| Spring Boot          | 3.2.3          | [Spring Initializr](https://start.spring.io/)     |
-| PostgreSQL           | 16 o superior  | [Descargar PostgreSQL](https://www.postgresql.org/download/) |
+| Spring Boot          | 3.5.0          | [Spring Initializr](https://start.spring.io/)     |
+| PostgreSQL           | 17  | [Descargar PostgreSQL](https://www.postgresql.org/download/) |
 | IntelliJ IDEA (opcional) | Última versión | [Descargar IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/download/?section=windows) |
 
 ---
@@ -32,7 +32,7 @@ Utilizaremos [Spring Initializr](https://start.spring.io/) para generar la estru
 
 - **Project:** Maven
 - **Language:** Java
-- **Spring Boot:** 3.2.3
+- **Spring Boot:** 3.5.0
 - **Packaging:** JAR
 - **Java:** 21
 
