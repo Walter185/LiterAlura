@@ -103,9 +103,23 @@ public class Principal {
 
     private void autoresVivosPorAnio() {
         System.out.print("Ingresa el año: ");
+
+        while (!teclado.hasNextInt()) {
+            System.out.println("Por favor, ingresa un año válido (número entero).");
+            teclado.nextLine();
+        }
+
         int anio = teclado.nextInt();
         teclado.nextLine();
-        repositoryAutor.listaAutoresVivosPorAnio(anio).forEach(System.out::println);
+
+        List<Autor> autores = repositoryAutor.listaAutoresVivosPorAnio(anio);
+
+        if (autores.isEmpty()) {
+            System.out.println("No se encontraron autores vivos en el año " + anio + ".");
+        } else {
+            System.out.println("Autores vivos en el año " + anio + ":");
+            autores.forEach(System.out::println);
+        }
     }
 
     private void buscarLibroPorIdioma() {
