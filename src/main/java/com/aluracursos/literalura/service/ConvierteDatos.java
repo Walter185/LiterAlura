@@ -1,17 +1,19 @@
 package com.aluracursos.literalura.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class ConvierteDatos implements IConvierteDatos {
-    private ObjectMapper objectMapper = new ObjectMapper();
+import java.io.IOException;
 
-    @Override
+public class ConvierteDatos {
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
     public <T> T obtenerDatos(String json, Class<T> clase) {
         try {
-            return objectMapper.readValue(json,clase);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
+            return objectMapper.readValue(json, clase);
+        } catch (IOException e) {
+            System.out.println("Error al convertir datos: " + e.getMessage());
+            return null;
         }
     }
 }
+

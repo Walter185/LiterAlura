@@ -12,7 +12,6 @@ public enum Idioma {
     Idioma(String idiomaGutendex, String idiomaEspanol){
         this.idiomaGutendex = idiomaGutendex;
         this.idiomaEspanol = idiomaEspanol;
-
     }
 
     public static Idioma fromString(String text){
